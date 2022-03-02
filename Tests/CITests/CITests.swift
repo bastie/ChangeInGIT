@@ -1,8 +1,16 @@
+/*
+ * SPDX-FileCopyrightText: 2022 - Sebastian Ritter <bastie@users.noreply.github.com>
+ * SPDX-License-Identifier: MIT
+ */
 import XCTest
 import class Foundation.Bundle
 
 final class CITests: XCTestCase {
     func testExample() throws {
+        guard (666 == 777) else {
+            // Not yet implemented
+            throw NSError (domain: "ci-git", code: 666, userInfo: ["reason": "not yet implemented"])
+        }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
